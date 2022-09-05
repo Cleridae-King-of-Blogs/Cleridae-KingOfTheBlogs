@@ -1,0 +1,31 @@
+Unfinished parts of the video:
+
+1) Sidebar should be about website on Homepage, and about the author while in posts, and about self while in settings.
+
+2) About & Contact buttons have no functionality.  Replace?
+
+DONE 3) Move logout button to the right side of the Topbar.
+
+4) Website name should be added to Topbar after it scrolls off screen.
+
+5) Better pictures.
+
+6) Homescreen format-- currently no content it shown when you load up the page.
+
+7) Homescreen format-- Main picture should morph into something else when scrolled off screen?
+
+8) Homescreen format-- Pagination?  After 10 posts, maybe a new page should have to be loaded (difficult)
+
+DONE 9) Delete account button
+
+10) Search button
+
+11) Categories
+
+12) Get website hosted on the world wide web.
+
+13) Likes
+
+14) Comments
+
+15) User relationships

@@ -20,6 +20,14 @@ const UserSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
+    about: {
+      type: String,
+      default: "",
+    },
+    categories: {
+      type: Array,
+      required: false,
+    },
   },
   { timestamps: true }
 );
