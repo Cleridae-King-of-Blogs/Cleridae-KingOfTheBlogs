@@ -83,5 +83,3 @@ export default function Write() {
     </div>
   );
 }
-
-//glen reid, steve jobs iphone, john gastee (was ceo of apple), NOT lionus torvald,
