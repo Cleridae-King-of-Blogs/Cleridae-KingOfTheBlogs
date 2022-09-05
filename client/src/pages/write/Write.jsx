@@ -6,6 +6,7 @@ import "./write.css";
 export default function Write() {
   const [title, setTitle] = useState("");
   const [desc, setDesc] = useState("");
+  const [categories, setCategories] = useState("");
   const [file, setFile] = useState(null);
   const { user } = useContext(Context);
 
@@ -15,11 +16,12 @@ export default function Write() {
       username: user.username,
       title,
       desc,
+      categories: categories,
     };
     if (file) {
       const data = new FormData();
       const filename = Date.now() + file.name;
-      data.append("name",filename)
+      data.append("name", filename);
       data.append("file", file);
       newPost.photo = filename;
       try {
@@ -56,6 +58,14 @@ export default function Write() {
             autoFocus={true}
             onChange={(e) => setTitle(e.target.value)}
           />
+          <span>
+            <input
+              className="writeInput writeCat"
+              placeholder="Category"
+              type="text"
+              onChange={(e) => setCategories(e.target.value)}
+            />
+          </span>
         </div>
         <div className="writeFormGroup">
           <textarea
