@@ -19,9 +19,15 @@
   color: lightcoral;
 }
 
-.settingsDeleteTitle {
-  color: red;
-  font-size: 12px;
+.settingsDelete {
+  width: 125px;
+  align-self: center;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: red;
+  padding: 10px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
@@ -58,7 +64,7 @@
 
 .settingsForm > label {
   font-size: 20px;
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .settingsForm > input {
