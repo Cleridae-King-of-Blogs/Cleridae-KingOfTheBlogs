@@ -24,6 +24,7 @@ export default function Settings() {
       password,
       about,
     };
+
     if (file) {
       const data = new FormData();
       const filename = Date.now() + file.name;
@@ -53,6 +54,10 @@ export default function Settings() {
       window.location.replace("/");
     } catch (err) {}
   };
+
+  const fillname = user.username;
+  const fillemail = user.email;
+  const fillabout = user.about;
 
   return (
     <div className="settings">
@@ -90,12 +95,14 @@ export default function Settings() {
           <input
             type="text"
             placeholder={user.username}
+            // value={fillname}
             onChange={(e) => setUsername(e.target.value)}
           />
           <label>Email</label>
           <input
             type="email"
             placeholder={user.email}
+            // value={fillemail}
             onChange={(e) => setEmail(e.target.value)}
           />
           <label>About You</label>
@@ -103,6 +110,7 @@ export default function Settings() {
             type="text"
             maxLength="1000"
             placeholder={user.about}
+            // value={fillabout}
             onChange={(e) => setAbout(e.target.value)}
           />
           <label>Password</label>
