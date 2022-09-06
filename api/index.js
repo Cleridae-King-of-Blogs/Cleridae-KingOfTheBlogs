@@ -45,3 +45,5 @@ app.use("/api/categories", categoryRoute);
 app.listen("4000", () => {
   console.log("Backend is running");
 });
+//this is a test
+//this is a test 2 
