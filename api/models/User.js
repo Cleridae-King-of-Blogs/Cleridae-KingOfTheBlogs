@@ -18,7 +18,15 @@ const UserSchema = new mongoose.Schema(
     },
     profilePicture: {
       type: String,
+      default: "default.png",
+    },
+    about: {
+      type: String,
       default: "",
+    },
+    categories: {
+      type: Array,
+      required: false,
     },
   },
   { timestamps: true }
