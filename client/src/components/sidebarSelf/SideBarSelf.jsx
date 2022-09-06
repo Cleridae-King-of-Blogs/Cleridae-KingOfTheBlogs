@@ -19,7 +19,7 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT THE AUTHOR</span>
+        <span className="sidebarTitle">ABOUT YOU</span>
         <img className="sidebarImg" src={PF + user.profilePicture} alt="" />
         <p>{user.about}</p>
       </div>

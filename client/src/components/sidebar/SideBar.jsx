@@ -17,15 +17,18 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
+        <span className="sidebarTitle">ABOUT US</span>
         <img
           className="sidebarImg"
           src="https://www.science.org/do/10.1126/article.22864/abs/sn-pandash.jpg"
           alt=""
         />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-          architecto dolor repellat quidem adipisci tenetur.
+          This website was built by a conglomerate of Zip Code Wilmington
+          Students from a variety of diverse backgrounds. Each of them combined
+          their skills learned during twelve weeks of schooling to build this
+          wonderful website. They employed AGILE methods to organize and plan
+          the execution of the build.
         </p>
       </div>
       <div className="sidebarItem">
@@ -33,7 +36,7 @@ export default function SideBar() {
         <ul className="sidebarList">
           {cat.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
-            <li className="sidebarListItem">{c.name}</li>
+              <li className="sidebarListItem">{c.name}</li>
             </Link>
           ))}
         </ul>

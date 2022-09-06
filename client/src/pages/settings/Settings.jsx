@@ -1,5 +1,5 @@
 import "./settings.css";
-import SidebarSelf from "../../components/sidebar/SideBar";
+import SidebarSelf from "../../components/sidebarSelf/SideBarSelf";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
@@ -55,9 +55,14 @@ export default function Settings() {
     } catch (err) {}
   };
 
-  const fillname = user.username;
-  const fillemail = user.email;
-  const fillabout = user.about;
+  // const fillname = user.username;
+  // const fillemail = user.email;
+  // const fillabout = user.about;
+
+  // const getUser = async () => {
+  //   const res = await.axios.get(`/users/` + )
+
+  // }
 
   return (
     <div className="settings">
