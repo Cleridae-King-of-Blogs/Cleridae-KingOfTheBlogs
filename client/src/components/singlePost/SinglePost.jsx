@@ -3,6 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./singlepost.css";
+import { Markup } from 'interweave';
 
 export default function SinglePost() {
   const location = useLocation();
@@ -99,7 +100,10 @@ export default function SinglePost() {
             onChange={(e) => setDesc(e.target.value)}
           />
         ) : (
-          <p className="singlePostDesc">{desc}</p>
+          // <p className="singlePostDesc">{desc}</p>
+          <div className="singlePostDesc">
+          <Markup content={desc} />
+          </div>
         )}
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
