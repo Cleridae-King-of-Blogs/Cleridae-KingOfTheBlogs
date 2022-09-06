@@ -1,8 +1,8 @@
 Unfinished parts of the video:
 
-1) Sidebar should be about website on Homepage, and about the author while in posts, and about self while in settings.
+1) Sidebar should be about website on Homepage (check), about the author while in posts, and about self while in settings (check).
 
-2) About & Contact buttons have no functionality.  Replace?
+2) About & Contact buttons have no functionality.  Create pages for both.
 
 DONE 3) Move logout button to the right side of the Topbar.
 
@@ -10,7 +10,7 @@ DONE 3) Move logout button to the right side of the Topbar.
 
 5) Better pictures.
 
-6) Homescreen format-- currently no content it shown when you load up the page.
+DONE 6) Homescreen format-- currently no content it shown when you load up the page.
 
 7) Homescreen format-- Main picture should morph into something else when scrolled off screen?
 

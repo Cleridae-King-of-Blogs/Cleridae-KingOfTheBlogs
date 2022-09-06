@@ -38,8 +38,16 @@
   font-family: "Lora", serif;
   font-style: italic;
   font-size: 16px;
-  color: #999;
+  color: blue;
   margin-top: 10px;
+}
+
+.postAuthor2 {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
+  /* margin-top: 10px; */
 }
 
 .postDate {
