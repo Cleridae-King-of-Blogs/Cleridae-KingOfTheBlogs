@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+const PF = "http://localhost:4000/images/";
 
 export default function SideBar() {
   const [cat, setCats] = useState([]);
@@ -20,7 +21,8 @@ export default function SideBar() {
         <span className="sidebarTitle">ABOUT US</span>
         <img
           className="sidebarImg"
-          src="https://www.science.org/do/10.1126/article.22864/abs/sn-pandash.jpg"
+          // src="https://www.science.org/do/10.1126/article.22864/abs/sn-pandash.jpg"
+          src={PF + "panda.jpeg"}
           alt=""
         />
         <p>

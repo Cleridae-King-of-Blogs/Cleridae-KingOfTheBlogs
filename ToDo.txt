@@ -21,6 +21,8 @@ DONE 9) Delete account button
 10) Search button
 
 11) Categories
+    a) Add to DB when making a post
+    b) center them on the sidebar
 
 12) Get website hosted on the world wide web.
 
