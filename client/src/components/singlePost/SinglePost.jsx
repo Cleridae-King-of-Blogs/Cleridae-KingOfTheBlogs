@@ -20,6 +20,7 @@ export default function SinglePost() {
       setPost(res.data);
       setTitle(res.data.title);
       setDesc(res.data.desc);
+      // setUserPhoto(res.data.userPhoto);
     };
     getPost();
   }, [path]);
@@ -77,10 +78,13 @@ export default function SinglePost() {
           </h1>
         )}
         <div className="singlePostInfo">
+          <span>
+            <img src={PF + post.userPhoto} alt=""></img>
+          </span>
           <span className="singlePostAuthor">
             Author: &nbsp;
             <Link to={`/?user=${post.username}`} className="link">
-              <b>{post.username}</b>
+              <b style={{ color: "blue" }}>{post.username}</b>
             </Link>
           </span>
           <span className="singlePostDate">
