@@ -17,7 +17,12 @@ export default function Topbar() {
         <i className="topIcon fab fa-pinterest-square"></i>
         <i className="topIcon fab fa-twitter-square"></i>
       </div>
-      <div className="topCenter">
+      <div
+        className="topCenter"
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
         <ul className="topList">
           <li className="topListItem">
             <Link className="link" to="/">
@@ -25,7 +30,7 @@ export default function Topbar() {
             </Link>
           </li>
           <li className="topListItem">
-          <Link className="link" to="/about">
+            <Link className="link" to="/about">
               ABOUT
             </Link>
           </li>
@@ -37,7 +42,12 @@ export default function Topbar() {
           </li>
         </ul>
       </div>
-      <div className="topRight">
+      <div
+        className="topRight"
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
         {user && (
           <ul className="topList">
             <li className="topListItem" onClick={handleLogout}>

@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Context } from "../../context/Context";
 import "./singlepost.css";
-import { Markup } from 'interweave';
+import { Markup } from "interweave";
 
 export default function SinglePost() {
   const location = useLocation();
@@ -82,7 +82,12 @@ export default function SinglePost() {
           <span>
             <img src={PF + post.userPhoto} alt=""></img>
           </span>
-          <span className="singlePostAuthor">
+          <span
+            className="singlePostAuthor"
+            onClick={() => {
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }}
+          >
             Author: &nbsp;
             <Link to={`/?user=${post.username}`} className="link">
               <b style={{ color: "blue" }}>{post.username}</b>
@@ -102,7 +107,7 @@ export default function SinglePost() {
         ) : (
           // <p className="singlePostDesc">{desc}</p>
           <div className="singlePostDesc">
-          <Markup content={desc} />
+            <Markup content={desc} />
           </div>
         )}
         {updateMode && (
