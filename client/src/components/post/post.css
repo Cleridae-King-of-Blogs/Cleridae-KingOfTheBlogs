@@ -34,16 +34,24 @@
   cursor: pointer;
 }
 
+.postAuthor {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 16px;
+  color: #999;
+  margin-top: 10px;
+}
+
 .postDate {
   font-family: "Lora", serif;
   font-style: italic;
   font-size: 13px;
   color: #999;
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .postDesc {
-  font-family: 'Varela Round', sans-serif;
+  font-family: "Varela Round", sans-serif;
   font-size: 14px;
   color: #444;
   line-height: 24px;
@@ -54,4 +62,3 @@
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
 }
-

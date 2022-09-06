@@ -31,14 +31,16 @@ export default function Topbar() {
               WRITE
             </Link>
           </li>
-          {user && (
-            <li className="topListItem" onClick={handleLogout}>
-              LOGOUT
-            </li>
-          )}
         </ul>
       </div>
       <div className="topRight">
+        {user && (
+          <ul className="topList">
+            <li className="topListItem" onClick={handleLogout}>
+              LOGOUT
+            </li>
+          </ul>
+        )}
         {user ? (
           <Link className="link" to="/settings">
             <img className="topImg" src={PF + user.profilePicture} alt="" />

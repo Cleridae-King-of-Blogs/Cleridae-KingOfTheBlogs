@@ -1,12 +1,14 @@
 import axios from "axios";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./sidebar.css";
+import { Context } from "../../context/Context";
+import "./sidebarself.css";
 
 export default function SideBar() {
+  const PF = "http://localhost:4000/images/";
   const [cat, setCats] = useState([]);
-
+  const { user } = useContext(Context);
   useEffect(() => {
     const getCats = async () => {
       const res = await axios.get("/categories");
@@ -17,19 +19,9 @@ export default function SideBar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT US</span>
-        <img
-          className="sidebarImg"
-          src="https://www.science.org/do/10.1126/article.22864/abs/sn-pandash.jpg"
-          alt=""
-        />
-        <p>
-          This website was built by a conglomerate of Zip Code Wilmington
-          Students from a variety of diverse backgrounds. Each of them combined
-          their skills learned during twelve weeks of schooling to build this
-          wonderful website. They employed AGILE methods to organize and plan
-          the execution of the build.
-        </p>
+        <span className="sidebarTitle">ABOUT YOU</span>
+        <img className="sidebarImg" src={PF + user.profilePicture} alt="" />
+        <p>{user.about}</p>
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
@@ -42,7 +34,7 @@ export default function SideBar() {
         </ul>
       </div>
       <div className="sidebarItem">
-        <span className="sidebarTitle">FOLLOW US</span>
+        <span className="sidebarTitle">FOLLOW THE AUTHOR</span>
         <div className="sidebarSocial">
           <i className="sidebarIcon fa-brands fa-square-facebook"></i>
           <i className="sidebarIcon fa-brands fa-square-twitter"></i>

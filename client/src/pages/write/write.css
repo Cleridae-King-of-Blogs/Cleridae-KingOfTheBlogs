@@ -37,7 +37,17 @@
   font-size: 30px;
   border: none;
   padding: 20px;
-  width: 70vw;
+  /* width: 70vw; */
+}
+
+.writeTitle {
+  width: 50vw;
+}
+
+.writeCat {
+  font-size: 20px;
+  width: 40vw;
+  border-left: solid rgb(129, 125, 125);
 }
 
 .writeInput::placeholder {
@@ -54,6 +64,7 @@
   height: 100vh;
   font-family: inherit;
   font-size: 20px;
+  border: ridge 5px;
 }
 
 .writeSubmit {

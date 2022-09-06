@@ -1,5 +1,5 @@
 import "./settings.css";
-import Sidebar from "../../components/sidebar/SideBar";
+import SidebarSelf from "../../components/sidebarSelf/SideBarSelf";
 import { useContext, useState } from "react";
 import { Context } from "../../context/Context";
 import axios from "axios";
@@ -9,6 +9,7 @@ export default function Settings() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [about, setAbout] = useState("");
   const [success, setSuccess] = useState(false);
   const { user, dispatch } = useContext(Context);
   const PF = "http://localhost:4000/images/";
@@ -21,7 +22,9 @@ export default function Settings() {
       username,
       email,
       password,
+      about,
     };
+
     if (file) {
       const data = new FormData();
       const filename = Date.now() + file.name;
@@ -42,12 +45,38 @@ export default function Settings() {
     dispatch({ type: "UPDATE_FAILURE" });
   };
 
+  const handleDelete = async () => {
+    try {
+      await axios.delete(`/users/${user._id}`, {
+        data: { userId: user._id },
+      });
+      dispatch({ type: "LOGOUT" });
+      window.location.replace("/");
+    } catch (err) {}
+  };
+
+  // const fillname = user.username;
+  // const fillemail = user.email;
+  // const fillabout = user.about;
+
+  // const getUser = async () => {
+  //   const res = await.axios.get(`/users/` + )
+
+  // }
+
   return (
     <div className="settings">
       <div className="settingsWrapper">
         <div className="settingsTitle">
           <span className="settingsUpdateTitle">Update Your Account</span>
-          <span className="settingsDeleteTitle">Delete Account</span>
+
+          <button
+            className="settingsDelete"
+            type="submit"
+            onClick={handleDelete}
+          >
+            Delete Account
+          </button>
         </div>
         <form className="settingsForm" onSubmit={handleSubmit}>
           <label>Profile Picture</label>
@@ -71,15 +100,25 @@ export default function Settings() {
           <input
             type="text"
             placeholder={user.username}
+            // value={fillname}
             onChange={(e) => setUsername(e.target.value)}
           />
           <label>Email</label>
           <input
             type="email"
             placeholder={user.email}
+            // value={fillemail}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label>password</label>
+          <label>About You</label>
+          <input
+            type="text"
+            maxLength="1000"
+            placeholder={user.about}
+            // value={fillabout}
+            onChange={(e) => setAbout(e.target.value)}
+          />
+          <label>Password</label>
           <input
             type="password"
             onChange={(e) => setPassword(e.target.value)}
@@ -96,7 +135,7 @@ export default function Settings() {
           )}
         </form>
       </div>
-      <Sidebar />
+      <SidebarSelf />
     </div>
   );
 }
