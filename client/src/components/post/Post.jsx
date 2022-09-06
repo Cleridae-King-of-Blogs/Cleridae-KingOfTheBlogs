@@ -3,9 +3,16 @@ import "./post.css";
 
 export default function Post({ post }) {
   const PF = "http://localhost:4000/images/";
+
   return (
     <div className="post">
-      <Link to={`/post/${post._id}`} className="link">
+      <Link
+        to={`/post/${post._id}`}
+        className="link"
+        onClick={() => {
+          window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }}
+      >
         {post.photo && <img className="postImg" src={PF + post.photo} alt="" />}
       </Link>
       <div className="postInfo">
@@ -14,23 +21,35 @@ export default function Post({ post }) {
             <span className="postCat">{c.name}</span>
           ))}
         </div>
-        <Link to={`/post/${post._id}`} className="link">
+        <Link
+          to={`/post/${post._id}`}
+          className="link"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           <span className="postTitle">{post.title}</span>
         </Link>
         <hr />
-        {/* <span className="postAuthor">
-          {post.username}, {new Date(post.createdAt).toDateString()}
-        </span> */}
 
-        <p
-          style={{ fontSize: "16px", fontWeight: "bold" }}
-          className="postAuthor"
+        <Link
+          to={`/?user=${post.username}`}
+          className="link"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
         >
-          {post.username}{" "}
-          <span style={{ fontSize: "13px" }}>
-            , {new Date(post.createdAt).toDateString()}
-          </span>
-        </p>
+          <p
+            style={{ fontSize: "16px", fontWeight: "bold" }}
+            className="postAuthor"
+          >
+            {post.username}
+          </p>
+        </Link>
+
+        <span style={{ fontSize: "13px" }} className="postAuthor2">
+          {new Date(post.updatedAt).toDateString()}
+        </span>
       </div>
       <p className="postDesc">{post.desc}</p>
     </div>
