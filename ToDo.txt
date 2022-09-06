@@ -29,3 +29,9 @@ DONE 9) Delete account button
 14) Comments
 
 15) User relationships
+
+16) Text formatting on blog page
+
+17) Don't allow Settings page or Login page to submit empty values.
+
+18) Stop website from crashing when user inputs incorrect password.
