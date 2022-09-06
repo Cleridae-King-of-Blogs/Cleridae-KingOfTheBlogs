@@ -24,8 +24,7 @@ export default function SideBar() {
           alt=""
         />
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-          architecto dolor repellat quidem adipisci tenetur.
+          Blogging, where your mind can be free?
         </p>
       </div>
       <div className="sidebarItem">
