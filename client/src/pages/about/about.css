@@ -1,5 +1,33 @@
 .about {
     font-size: 30px;
-    display: flex;
-    padding-top: 200px;
+    position: flex;
+    top: 50px;
+}
+.aboutTitle {
+    font-size: 40px;
+}
+.aboutItem {
+    font-size: 18px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}   
+
+.randyImage {
+    height: 120px;
+    width: 120px;
+}
+.maryImage {
+    height: 120px;
+    width: 120px;
+}
+.kyleImage {
+    height: 120px;
+    width: 120px;
+}
+.eugeneImage {
+    height: 120px;
+    width: 120px;
 }
