@@ -23,6 +23,11 @@
   margin-right: 10px;
   color: #444;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.topIcon:hover {
+  transform: scale(1.2);
 }
 
 .topCenter {
@@ -42,10 +47,12 @@
   font-size: 18px;
   font-weight: 300;
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
-.topListItem:hover{
-    color: gray;
+.topListItem:hover {
+  color: gray;
+  transform: scale(1.1);
 }
 
 .topImg {
@@ -55,6 +62,11 @@
   object-fit: cover;
   margin-right: 15px;
   cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.topImg:hover {
+  transform: scale(1.1);
 }
 
 .topSearchIcon {

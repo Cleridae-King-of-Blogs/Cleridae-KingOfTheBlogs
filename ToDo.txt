@@ -2,7 +2,7 @@ Things To Do:
 
 1) Sidebar should be about website on Homepage (check), about the author while in posts, and about self while in settings (check).
 
-2) About & Contact buttons have no functionality.  Create pages for both.
+2) ABOUT page
 
 DONE 3) Move logout button to the right side of the Topbar.
 
@@ -38,6 +38,4 @@ DONE 16) Text formatting on blog page
 
 18) Stop website from crashing when user inputs incorrect password.
 
-19) ABOUT page
-
-20) CONTACT page
+19) CONTACT page
