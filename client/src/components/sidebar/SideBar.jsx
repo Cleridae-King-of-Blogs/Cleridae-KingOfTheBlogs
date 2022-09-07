@@ -35,7 +35,12 @@ export default function SideBar() {
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
-        <ul className="sidebarList">
+        <ul
+          className="sidebarList"
+          onClick={() => {
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+          }}
+        >
           {cat.map((c) => (
             <Link to={`/?cat=${c.name}`} className="link">
               <li className="sidebarListItem">{c.name}</li>

@@ -1,4 +1,4 @@
-Unfinished parts of the video:
+Things To Do:
 
 1) Sidebar should be about website on Homepage (check), about the author while in posts, and about self while in settings (check).
 
@@ -8,7 +8,7 @@ DONE 3) Move logout button to the right side of the Topbar.
 
 4) Website name should be added to Topbar after it scrolls off screen.
 
-5) Better pictures.
+DONE 5) Better pictures.
 
 DONE 6) Homescreen format-- currently no content it shown when you load up the page.
 
@@ -22,7 +22,7 @@ DONE 9) Delete account button
 
 11) Categories
     a) Add to DB when making a post
-    b) center them on the sidebar
+   DONE b) center them on the sidebar
 
 12) Get website hosted on the world wide web.
 
@@ -32,8 +32,12 @@ DONE 9) Delete account button
 
 15) User relationships
 
-16) Text formatting on blog page
+DONE 16) Text formatting on blog page
 
 17) Don't allow Settings page or Login page to submit empty values.
 
 18) Stop website from crashing when user inputs incorrect password.
+
+19) ABOUT page
+
+20) CONTACT page

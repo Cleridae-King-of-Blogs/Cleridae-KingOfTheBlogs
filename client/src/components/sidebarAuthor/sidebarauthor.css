@@ -44,6 +44,7 @@
 }
 
 .sidebarList{
+    margin-left: 45px;
     list-style: none;
     margin-bottom: 30px;
 }
