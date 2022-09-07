@@ -8,6 +8,7 @@
 }
 .aboutItem {
     font-size: 18px;
+    font-display: auto;
 }
 
 img {
@@ -16,18 +17,18 @@ img {
 }   
 
 .randyImage {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
 }
 .maryImage {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
 }
 .kyleImage {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
 }
 .eugeneImage {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
 }
