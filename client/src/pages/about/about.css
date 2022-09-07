@@ -1,9 +1,13 @@
 .about {
     font-size: 30px;
-    
     position: flex;
     top: 50px;
-
+}
+.aboutTitle {
+    font-size: 40px;
+}
+.aboutItem {
+    font-size: 18px;
 }
 
 img {
@@ -12,22 +16,18 @@ img {
 }   
 
 .randyImage {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
 }
 .maryImage {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
 }
 .kyleImage {
-    height: 200px;
-    width: 200px;
+    height: 120px;
+    width: 120px;
 }
 .eugeneImage {
-    height: 200px;
-    width: 200px;
-}
-
-span {
-    font-size: 20px;
+    height: 120px;
+    width: 120px;
 }
