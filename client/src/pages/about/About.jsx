@@ -44,7 +44,8 @@ export default function About() {
           alt=""
         />
         <span className="eugeneblurb">
-        Eugene Shin, BS in Biology from Penn State University - University Park, a former Certified Nursing Assistant at One You Love Homecare. Independently developing an app, where users are given Korean music suggestions based on weather using Java, SQL, Spring Boot, and React. In a team of 4, used Java, Spring Boot, SQL, React, and AWS to create a blog application that allows users to create and view posts from other users; can be filtered through the use of tagging; personally responsible for creating user interface using React. Proficient in Java, SQL, Spring Boot, Unit Testing, and Git. Learning JavaScript, Agile and Scrum methodologies.        </span>
+        Eugene Shin, BS in Biology from Penn State University - University Park, a former Certified Nursing Assistant at One You Love Homecare. Independently developing an app, where users are given Korean music suggestions based on weather using Java, SQL, Spring Boot, and React. In a team of 4, used MongoDB, Express, React, Node.js, and AWS to create a blog application that allows users to create and view posts from other users; can be filtered through the use of tagging; personally responsible for creating user interfaces using React. Proficient in Java, SQL, Spring Boot, Unit Testing, and Git. Learning JavaScript, Agile and Scrum methodologies.
+        </span>
         </div>
       </div>
       </div>
