@@ -1,34 +1,48 @@
 .about {
-    font-size: 30px;
-    position: flex;
-    top: 50px;
+  font-family: "Varela Round", sans-serif;
 }
+
+.boxes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+}
+
+.aboutbox {
+  width: 325px;
+}
+
 .aboutTitle {
-    font-size: 40px;
-}
-.aboutItem {
-    font-size: 18px;
-    font-display: auto;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 40px;
+  align-items: center;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}   
+.aboutimg {
+  height: 325px;
+  width: 325px;
+  border-radius: 10px;
+  object-fit: cover;
+  justify-content: center;
+}
 
-.randyImage {
-    height: 140px;
-    width: 140px;
+.boxinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.maryImage {
-    height: 140px;
-    width: 140px;
+
+.name {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: 25px;
+  color: coral;
+  margin-top: 10px;
 }
-.kyleImage {
-    height: 140px;
-    width: 140px;
-}
-.eugeneImage {
-    height: 140px;
-    width: 140px;
+
+.blurb {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
 }
