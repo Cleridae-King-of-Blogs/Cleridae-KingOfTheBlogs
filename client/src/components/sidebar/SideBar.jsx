@@ -22,7 +22,7 @@ export default function SideBar() {
         <img
           className="sidebarImg"
           // src="https://www.science.org/do/10.1126/article.22864/abs/sn-pandash.jpg"
-          src={PF + "panda.jpeg"}
+          src={PF + "friends.jpg"}
           alt=""
         />
         <p>
