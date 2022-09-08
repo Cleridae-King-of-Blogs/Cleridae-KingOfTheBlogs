@@ -1,5 +1,4 @@
 import "./about.css";
-import Sidebar from "../../components/sidebar/SideBar";
 const PF = "http://localhost:4000/images/";
 
 export default function About() {
